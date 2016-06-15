@@ -88,7 +88,8 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-
+            
+        
             int firstzebra = str.IndexOf("LION");
             int lastzebra = str.LastIndexOf("LION");
             int numberofzebras = lastzebra - firstzebra;
@@ -100,6 +101,7 @@ namespace StringSafari
             {
                 return false;
             }
+
 
         }
 
