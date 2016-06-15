@@ -32,6 +32,7 @@ namespace StringSafari
         {
             // TODO
             return str.Contains("ZEBRA");
+
         }
 
         /// <summary>
@@ -56,7 +57,25 @@ namespace StringSafari
         public static bool HasADazzle(string str)
         {
             // TODO
-            return str.Contains("lion");
+            
+                
+            int firstzebra = str.IndexOf("zebra");
+            int lastzebra = str.LastIndexOf("zebra");
+            int numberofzebras = lastzebra - firstzebra;
+            if (numberofzebras >= 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        
+            
+            
+
+            
+              
         }
 
         /// <summary>
@@ -69,7 +88,19 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-            return str.Contains("LION");
+
+            int firstzebra = str.IndexOf("LION");
+            int lastzebra = str.LastIndexOf("LION");
+            int numberofzebras = lastzebra - firstzebra;
+            if (numberofzebras >= 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         /// <summary>
