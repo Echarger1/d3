@@ -88,12 +88,12 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-            
-        
-            int firstzebra = str.IndexOf("LION");
-            int lastzebra = str.LastIndexOf("LION");
-            int numberofzebras = lastzebra - firstzebra;
-            if (numberofzebras >= 2)
+
+            str = str.ToLower();
+            int fisrtLion = str.IndexOf("lion");
+            int lastLion = str.LastIndexOf("lion");
+            int numberOfLions = lastLion - fisrtLion;
+            if (numberOfLions >= 2)
             {
                 return true;
             }
@@ -101,7 +101,6 @@ namespace StringSafari
             {
                 return false;
             }
-
 
         }
 
@@ -114,7 +113,7 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-            return true;
+            return false;
         }
 
         /// <summary>
