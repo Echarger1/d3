@@ -81,7 +81,7 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-            return true ;
+            return true;
         }
 
         /// <summary>
