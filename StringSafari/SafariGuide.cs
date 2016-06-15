@@ -16,8 +16,10 @@ namespace StringSafari
         /// <returns>true if the string has "zebra" in it, false otherwise</returns>
         public static bool HasBabyZebra(string str)
         {
-            // TODO
-            return false;
+    
+
+            // TODO 
+            return str.Contains("zebra");
         }
 
         /// <summary>
@@ -29,7 +31,7 @@ namespace StringSafari
         public static bool HasAdultZebra(string str)
         {
             // TODO
-            return false;
+            return str.Contains("ZEBRA");
         }
 
         /// <summary>
@@ -42,7 +44,7 @@ namespace StringSafari
         public static bool HasZebra(string str)
         {
             // TODO
-            return false;
+            return str.ToLower()=="zebra";
         }
 
         /// <summary>
@@ -67,7 +69,7 @@ namespace StringSafari
         public static bool HasAPride(string str)
         {
             // TODO
-            return false;
+            return true;
         }
 
         /// <summary>
