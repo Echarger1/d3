@@ -45,7 +45,8 @@ namespace StringSafari
         public static bool HasZebra(string str)
         {
             // TODO
-            return str.ToLower()=="zebra";
+            string newString = str.ToLower();
+            return HasBabyZebra(newString);
         }
 
         /// <summary>
