@@ -113,18 +113,7 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-
-            int firstzebra = str.IndexOf("zebra");
-            int lastzebra = str.LastIndexOf("zebra");
-            int numberofzebras = lastzebra - firstzebra;
-            
-
-                str = str.ToLower();
-            int fisrtLion = str.IndexOf("lion");
-            int lastLion = str.LastIndexOf("lion");
-            int numberOfLions = lastLion - fisrtLion;
-
-            if (numberOfLions (2) && numberofzebras(1))
+            if (HasAPride(str) && !HasADazzle(str))
             {
                 return true;
             }
@@ -132,10 +121,6 @@ namespace StringSafari
             {
                 return false;
             }
-            {
-
-            }
-
         }
 
         /// <summary>
