@@ -146,7 +146,7 @@ namespace StringSafari
             }
             
 
-            return false;
+          
         }
     }
 }
