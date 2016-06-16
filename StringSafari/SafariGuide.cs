@@ -115,14 +115,15 @@ namespace StringSafari
         public static bool ThereWillBeBlood(string str)
         {
             // TODO
-            if (HasAPride(str) && !HasADazzle(str))
-            {
+           if (HasAPride(str) && (!HasADazzle(str)) && HasZebra(str))
+                {
                 return true;
             }
-            else
+           else
             {
                 return false;
             }
+                
         }
 
         /// <summary>
@@ -135,18 +136,12 @@ namespace StringSafari
         public static bool SafeDistanceToLion(string str)
         {
             // TODO
-                str = str.ToLower();
-            int lion = str.IndexOf("lion");
-
-            if (lion == -1)
-            {
-                return true;
-            }
-            else
+            string newString = str.ToLower();
+            if (newString.StartsWith("lion"))
             {
                 return false;
             }
-            
+            return true;
 
           
         }
