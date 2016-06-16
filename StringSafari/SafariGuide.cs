@@ -45,8 +45,7 @@ namespace StringSafari
         public static bool HasZebra(string str)
         {
             // TODO
-            string newString = str.ToLower();
-            return HasBabyZebra(newString);
+            return HasBabyZebra(str.ToLower());
         }
 
         /// <summary>
@@ -58,18 +57,18 @@ namespace StringSafari
         public static bool HasADazzle(string str)
         {
             // TODO
+
+            string newString = str.ToLower();
+            int firstzebra = newString.IndexOf("zebra");
+            int lastzebra = newString.LastIndexOf("zebra");
             
-                
-            int firstzebra = str.IndexOf("zebra");
-            int lastzebra = str.LastIndexOf("zebra");
-            int numberofzebras = lastzebra - firstzebra;
-            if (numberofzebras >= 2)
+            if (firstzebra == lastzebra)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
         
             
@@ -91,17 +90,19 @@ namespace StringSafari
             // TODO
 
             str = str.ToLower();
-            int fisrtLion = str.IndexOf("lion");
-            int lastLion = str.LastIndexOf("lion");
-            int numberOfLions = lastLion - fisrtLion;
-            if (numberOfLions >= 2)
-            {
-                return true;
-            }
-            else
+            string newString = str.ToLower();
+            int firstlion = newString.IndexOf("lion");
+            int lastlion = newString.LastIndexOf("lion");
+
+            if (firstlion == lastlion)
             {
                 return false;
             }
+            else
+            {
+                return true;
+            }
+
 
         }
 
